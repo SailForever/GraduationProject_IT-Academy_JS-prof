@@ -1,11 +1,11 @@
 var ClickAudio = new Audio;
 
 if (ClickAudio.canPlayType("audio/mpeg") == "probably") {
-  ClickAudio.src = "Click.mp3";
+  ClickAudio.src = "Audio/Click.mp3";
 }
 
 else {
-  ClickAudio.src = "Click.ogg";
+  ClickAudio.src = "Audio/Click.ogg";
 }
 
 document.addEventListener('keydown', movingCell, false);

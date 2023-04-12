@@ -13,7 +13,7 @@ function showResult(ResultH) {
     results_container.className = 'result_container';
 
     var img_close = document.createElement('img');
-    img_close.setAttribute('src', 'Cross.svg');
+    img_close.setAttribute('src', 'SVG/Cross.svg');
 
     img_close.className = 'close';
     img_close.setAttribute('onclick', 'closeResult(' + '\'' + game_version + '\'' + ');');

@@ -14,12 +14,12 @@ function showMenu() {
 
     setTimeout(function () { menu_to_open.style.height = TargetHeight + "px"; }, 0);
     menu_to_open.className = 'versions open';
-    document.querySelector('.chevron').src = 'Uparrow.svg'
+    document.querySelector('.chevron').src = 'SVG/Uparrow.svg'
   }
   else {
     menu_to_open.style.height = 0 + 'px';
     menu_to_open.className = 'versions';
-    document.querySelector('.chevron').src = 'Downarrow.svg'
+    document.querySelector('.chevron').src = 'SVG/Downarrow.svg'
   }
 
 }
