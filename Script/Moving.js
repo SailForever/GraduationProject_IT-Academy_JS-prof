@@ -608,7 +608,7 @@ function Vibro() {
 function changeGame(game) {
   var answer = 1;
   if (answer==1) {
-    document.location.href = 'First_page.html'
+    document.location.href = 'index.html'
   }
 }
 
