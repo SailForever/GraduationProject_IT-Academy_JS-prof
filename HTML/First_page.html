@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style_and_media.css">
+    <script type="text/javascript" src="Jquery-3.6.3.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
+    <title>2048</title>
+</head>
+<body>
+<div class="wrapper">
+<div class="container">
+    <div class="header">
+        <div class="title">2048</div>
+        <div class="count">0
+            <!--<div class="plus_count">0</div>-->
+        </div>
+        <div class="record">0</div>
+    </div>
+    <div class="link_wide">
+        <div class="version" onclick="changeGame('classic')"><a>Новая игра</a></div>
+    </div>
+    <div class="link_narrow">
+        <div class="menu" onclick="showMenu()">Меню
+        <img class="chevron" src="Downarrow.svg"/>
+        </div>
+        <div class="versions">
+            <div class="version"  onclick="changeGame('classic')"><a>Новая игра</a></div>
+        </div>
+
+    </div>
+    <div class="note">
+        Соединяй числа и получи <span>плитку 2048</span>!
+    </div>
+    <div class="game_wrapper">
+
+    <div class="game_container">
+        <div class="line">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="line">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="line">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="line">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+
+    </div>
+        <div class="game_over "><div class="text_game_over"></div>
+            <div class="anew" onclick="newGame()">Заново</div>
+        </div>
+
+
+    </div>
+
+    <div class="note">
+        <span>ИНСТРУКЦИЯ: </span><p>Используйте <span> стрелки на клавиатуре</span>, чтобы перемещать плитки. Когда две плитки с одинаковыми цифрами соприкасаются, они <span> сливаются в одну</span>!</p>
+    </div>
+    <div class="table_record" onclick="RestoreInfo(StringName1)">Таблица рекордов</div>
+</div>
+</div>
+<script type="text/javascript" src="Jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="Moving.js"></script>
+<script type="text/javascript" src="Results.js"></script>
+<script type="text/javascript" src="Classic_version.js"></script>
+<script type="text/javascript" src="Copy.js"></script>
+<script type="text/javascript" src="Counter.js"></script>
+<script type="text/javascript" src="Touch_event_classic.js"></script>
+<script type="text/javascript" src="Menu.js"></script>
+<script type="text/javascript" src="Resize.js"></script>
+
+</body>
+</html>
